@@ -164,9 +164,9 @@ RUN pip install --user --no-cache-dir $SOURCES/odoo
 #   Odoo Enterprise
 #
 
-FROM odoo AS enterprise
-ARG GITHUB_USER
-ARG GITHUB_TOKEN
-ENV GITHUB_USER="$GITHUB_USER"
-ENV GITHUB_TOKEN="$GITHUB_TOKEN"
-RUN git clone --single-branch --depth 1 --branch $ODOO_VERSION https://$GITHUB_USER:$GITHUB_TOKEN@github.com/odoo/enterprise.git $SOURCES/enterprise
+#FROM odoo AS enterprise
+#ARG GITHUB_USER
+#ARG GITHUB_TOKEN
+#ENV GITHUB_USER="$GITHUB_USER"
+#ENV GITHUB_TOKEN="$GITHUB_TOKEN"
+#RUN git clone --single-branch --depth 1 --branch $ODOO_VERSION https://$GITHUB_USER:$GITHUB_TOKEN@github.com/odoo/enterprise.git $SOURCES/enterprise
